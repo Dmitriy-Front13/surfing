@@ -684,9 +684,9 @@ ul.pricing__item-list {
         align-items: center;
         left: 0;
         right: 0;
-        top: 110px;
-        gap: 30px;
-        background-color: #bbc9cc;
+        top: 100px;
+        gap: 12px;
+        background-color: transparent;
         transform: translateY(-200%);
         transition: all .5s;
     }
@@ -785,7 +785,10 @@ ul.pricing__item-list {
         font-size: 16px;
         line-height: 19px;
     }
-
+    .menu__list-link {
+        font-size: 18px;
+        color:#FFFFFF;
+    }
     .title::after {
         font-size: 40px;
     }
