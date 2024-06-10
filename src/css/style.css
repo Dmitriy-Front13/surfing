@@ -105,6 +105,8 @@ body {
 
 .logo {
     margin-right: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .menu {
@@ -113,6 +115,8 @@ body {
 
 .menu__btn {
     display: none;
+    position: relative;
+    z-index: 2;
 }
 
 .menu__list {
@@ -684,15 +688,16 @@ ul.pricing__item-list {
         align-items: center;
         left: 0;
         right: 0;
-        top: 100px;
+        top: 0;
         gap: 12px;
-        background-color: transparent;
+        background: rgba(237,237,237,.1);
+        backdrop-filter: blur(10px);
         transform: translateY(-200%);
         transition: all .5s;
     }
 
     ul.menu__list {
-        padding: 10px 0;
+        padding: 90px 0 10px;
     }
 
     .menu__list--active {
