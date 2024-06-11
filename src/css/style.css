@@ -799,7 +799,7 @@ ul.pricing__item-list {
 
 }
 
-@media (max-width: 810px) {
+@media (max-width: 860px) {
     .menu__btn {
         display: flex;
         background-color: transparent;
@@ -844,6 +844,10 @@ ul.pricing__item-list {
     .menu__list-link {
         color: #242121;
     }
+}
+
+@media (max-width: 810px) {
+   
 
     .header__title {
         font-size: 165px;
