@@ -21,14 +21,23 @@ $(function () {
   $(window).on('scroll', function () {
     const scrollY = $(window).scrollTop();
 
-    if (scrollY > 50) {
+    if (scrollY > 0) {
+      $('.menu__btn').removeClass('menu__btn--active');
+      $('.menu__list').removeClass('menu__list--active');
+    }
+  });
+  $(window).on('scroll', function () {
+    if (scrollY > $(window).height()) {
       $svgElement.css('fill', '#00B2A0');
       header.css('background-color', '#00B2A0');
-       
+      $('.menu__list-link').css('color', 'black')
+
     } else {
       $svgElement.css('fill', '#fff');
       header.css('background-color', 'transparent');
-    }
-  }); 
+      $('.menu__list-link').css('color', 'white')
+    };
+  });
+
   var mixer = mixitup('.gallery__content');
 });

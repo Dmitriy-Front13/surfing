@@ -834,14 +834,18 @@ ul.pricing__item-list {
     .container {
         padding: 0 18px;
     }
+    
+    .logo {
+        width: 40px;
+    }
 
     .header__top__inner {
-        padding-top: 16px;
+        padding: 10px 0;
     }
 
     .menu__list-link {
         font-size: 18px;
-        color: #black;
+        color: white;
     }
 
 
@@ -910,11 +914,15 @@ ul.pricing__item-list {
     }
 
     ul.menu__list {
-        padding: 55px 0 10px;
+        padding: 60px 0 10px;
     }
 
     .menu__list--active {
         transform: translateY(0%);
+    }
+
+    .header__icon-svg {
+        height: 50px;
     }
 
 }
