@@ -30,12 +30,14 @@ $(function () {
     if (scrollY > $(window).height()) {
       $svgElement.css('fill', '#00B2A0');
       header.css('background-color', '#00B2A0');
-      $('.menu__list-link').css('color', 'black')
+      $('.menu__list-link').css('color', 'black');
+      $('.menu__list').css('paddingTop', '70px')
 
     } else {
       $svgElement.css('fill', '#fff');
       header.css('background-color', 'transparent');
-      $('.menu__list-link').css('color', 'white')
+      $('.menu__list-link').css('color', 'white');
+      $('.menu__list').css('paddingTop', '60px')
     };
   });
 
