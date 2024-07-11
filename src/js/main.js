@@ -19,7 +19,7 @@ $(function () {
   const header = $('.header__top')
 
 
-  $(window).on('scroll', function () {
+  $(window).on('scroll resize', function () {
     const scrollY = $(window).scrollTop();
     const width = $(window).width();
 
@@ -40,11 +40,14 @@ $(function () {
     if (width <= 860) {
       if (scrollY > $(window).height()) {
         $('.menu__list-link').css('color', 'black');
-        $('.menu__list').css('paddingTop', '70px')
+        $('.menu__list').css('paddingTop', '70px');
       } else {
         $('.menu__list-link').css('color', 'white');
-        $('.menu__list').css('paddingTop', '60px')
+        $('.menu__list').css('paddingTop', '60px');
       };
+    } else {
+        $('.menu__list-link').css('color', '');
+        $('.menu__list').css('paddingTop', '');
     }
   });
  
